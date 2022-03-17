@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    position:relative;
+    width: 100vw;
+    height: 100vh;
+    width: auto;
+    height: 800px;
+    background-color: antiquewhite;
+    background-image: url(../pic/acfunpng.png);
+    background-size:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login-box{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: rgb(208, 226, 241);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    /* margin-left: 600px; */
+    margin-top: -20px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: yellowgreen;
+    margin: 0 0 0 50%;
+    z-index: 3;
+}
+
+.right::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url(../pic/20200628122924.png);
+    background-size: cover;
+}
+
+.out-box {
+    width: 100%;
+    height:100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 0 0 -50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.out-box>h1{
+    margin: -40% -25% 0 -50%;
+    /* z-index: 10; */
+    position: absolute;
+    color: #fd4c5b;
+    font-size: 32px;
+    /* margin: -80% 0px 0px -60%; */
+}
+
+
+.output-frame{
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: rgb(189, 188, 188) 1px solid ;
+    /* justify-content: center; */
+}
+
+#h2{
+    /* margin-left: -14%; */
+    margin: -40% -50% -0.6% -50%;
+    font-size: 20px;
+    /* margin-top: -78.5%; */
+    color: #333333;
+}   
+
+#f1{
+    margin-left: 5%;
+}
+
+.output-frame input{
+    /* margin: 0 0 0 -50%; */
+    flex: 1;
+    /* border: 1px solid rgb(221, 219, 219); */
+    width: 0px;
+    height: 40px;
+    /* margin-left: 10px; */
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+    font-size: 14px;
+    /* margin: 10px 0px 0px 20px; */
+    padding-left: 10px;
+    border: none;
+    /* opacity: 0; */
+    background-color: #0000;
+    outline: none;
+}
+
+.output-frame label{
+    color: rgb(109, 108, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 60px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 40px;
+    /* padding-left:; */
+    /* margin: 20px 0px 20px 0px; */
+    /* background-color: hsl(0, 81%, 64%); */
+    /* border-radius: 20px 10px 10px 20px; */
+}
+
+.login-btn{
+    width: 305px;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    /* text-transform: translate; */
+    border:none;
+    outline: none;
+    color: white;
+    background-color: white;
+    background: linear-gradient(90deg,#f1737e,#fd4c5b,#f1737e);
+    background-size:400%;
+    z-index: 1;
+}
+
+.login-option a{
+    float: left;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.helpbtn{
+
+    /* display:block; */
+    /* float: left; */
+    margin-right: 120px;
+}
+
+.fpass{
+    /* display:block; */
+    /* float: left; */
+    margin-right: 15px;   
+}
+
+
+.login-option{
+    /* position: relative; */
+    margin-top: 50px;
+    /* float: left; */
+    width: 305px;
+    height: 20px;
+    background-color: #fff;
+}
+
+
+
+.login-btn{
+    animation: sun 9s infinite;
+}
+
+@keyframes sun {
+    100%{
+        background-position: -400%,0;
+    }
+}
+
+/* .login-btn::before{
+    color: red;
+    animation: sun 9s infinite;
+    content: "";
+    position: absolute;
+    left: 95px;
+    right: 95px;
+    bottom: 65px;
+    top: 280px;
+    left: 35%;
+    right: 10%;
+    bottom: 50%;
+    top: 50%;
+    transform: translate(20%,50%);
+
+    background: linear-gradient(90deg,rgb(10, 178, 245),rgb(247, 243, 8),rgb(243, 93, 163),rgb(10, 178, 245));
+    filter: blur(20px);
+    z-index: 11;
+    border-radius: 30px;
+    border:1px solid red;
+} */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var allin = document.getElementById("allin");
+            allin.onclick = function () {
+                var items = document.getElementsByName("item");
+                for (let index = 0; index < items.length; index++) {
+                    items[index].checked = true;
+                }
+            }
+            var allnot = document.getElementById("allnot");
+            allnot.onclick = function () {
+                var items = document.getElementsByName("item");
+                for (let index = 0; index < items.length; index++) {
+                    items[index].checked = false;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" id="allinornot" value="全选|全不选">全选|全不选
+    <br />
+    <input type="CheckBox" name="item" value="足球">足球
+    <input type="CheckBox" name="item" value="篮球">篮球
+    <input type="CheckBox" name="item" value="乒乓球">乒乓球
+    <input type="CheckBox" name="item" value="羽毛球">羽毛球
+    <br />
+    <br />
+    <input type="button" id="allin" value="全选">
+    <input type="button" id="allnot" value="全不选">
+    <input type="button" id="prevall" value="反选">
+    <input type="button" id="send" value="提交">
+</body>
+
+</html>

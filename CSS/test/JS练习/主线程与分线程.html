@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="数值" id="number">
+    <button id="btn">计算</button>
+    <script>
+        var btn = document.getElementById("btn")
+        btn.onclick = function () {
+            var input = document.getElementById("number")
+            var number = input.value
+            // alert(number)
+            // alert(fi(number))
+            var w = new Worker('woker.js')
+            w.postMessage(number)
+            w.onmessage=function(){
+                alert(event.data)
+            }
+        }
+        // setTimeout(function(){
+        //     alert("测试代码")
+        // },5000)
+
+    </script>
+</body>
+
+</html>

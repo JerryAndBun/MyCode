@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+        // $('div').hide();
+        // var Myvideo = document.querySelector('video')
+        // $("div").css("backgroundColor","blue")
+        // $('div').css('backgroundColor','pink')
+        // $('div').css('background', 'pink');
+        // $('div:first').css('background', 'red')
+        // $('div:first:hover').css('background', 'blue')
+        // Myvideo.play();  js写法
+        // $(Myvideo)[0].play()   JQuery写法 
+        $(function () {
+            var a = $('.fi')
+            var child =a.children('li')
+            child.css('backgroundColor','red')
+        })
+    </script>
+    <script>
+        window.onload=function(){
+            var ul = document.querySelector('ul')
+            var li = ul.getElementsByTagName('li')
+            // li[0].style.backgroundColor='blue'
+            $(li).css('backgroundColor','blue')
+        }
+    </script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div></div>
+    <div></div> -->
+    <ul class="fi">
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+    </ul>
+</body>
+
+</html>

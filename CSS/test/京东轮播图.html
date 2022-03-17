@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./重置样式表/reset.css" />
+    <style>
+      .box1 {
+        position: absolute;
+        z-index: 66;
+        left: 20px;
+        bottom: 20px;
+      }
+      .box1 a{
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: orange;
+        background-clip:content-box;
+        border: rgb(89, 71, 255) 2px transparent;
+      }
+      .box1 a:hover{
+        background-color: #fff;
+        border: tomato 2px solid;
+      }
+      .img_list {
+        width: 590px;
+        height: 470px;
+        position: relative;
+        margin: 200px auto;
+      }
+      .img1 {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="img_list">
+      <li>
+        <a class="img1" href="#"><img src="./jd图片/q.jpg" alt="" /></a>
+      </li>
+      <li>
+        <a class="img1" href="#"><img src="./jd图片/q (1).jpg" alt="" /></a>
+      </li>
+      <li>
+        <a class="img1" href="#"><img src="./jd图片/q (2).jpg" alt="" /></a>
+      </li>
+      <li>
+        <a class="img1" href="#"><img src="./jd图片/q (3).jpg" alt="" /></a>
+      </li>
+      <div class="box1">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+    </ul>
+  </body>
+</html>

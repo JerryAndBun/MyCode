@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东导航栏</title>
+    <link href="./重置样式表/normalize.css">
+</head>
+<style>
+body{
+    background-color:wheat;
+    margin: 0px;
+}
+div.imgbox{
+    height: 610px;
+    width: 250px;
+    margin:  auto;
+    background-color: red;
+    overflow: hidden;
+}
+
+.imgbox *{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.imgbox img:not(:last-child){
+    margin-bottom: 5px;
+}
+</style>
+<body>
+    <div class="imgbox">
+            <img class="img1" src="./jd图片/q (1).jpg">
+            <img class="img2" src="./jd图片/q (2).jpg">
+            <img class="img3" src="./jd图片/q (3).jpg">
+    </div>
+    <img src="./pic/飞机.jpg">
+</body>
+</html>

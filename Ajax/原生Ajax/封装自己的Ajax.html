@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./自己封装的Ajax.js"></script>
+    <script src="../JQueryAjax/jquery-3.5.1.min.js"></script>
+    <script>
+        MyAjax({
+            data: { id: 1 },
+            method: 'get',
+            url: 'http://www.liulongbin.top:3006/api/getbooks',
+            success: function (res) {
+                console.log(res);
+            }
+        })
+    </script>
+</head>
+
+<body>
+
+    <script >
+            $.ajax({
+                method: 'GET',
+                url: 'http://ajax.frontend.itheima.net:3006/api/jsonp',
+                data: {
+                    // id: 1
+                    name:'zs',
+                    age:20
+                },
+                success: function (res) {
+                    console.log(res.data);
+                }
+            })
+
+    </script>
+</body>
+
+</html>

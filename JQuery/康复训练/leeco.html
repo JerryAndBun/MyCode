@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var s = '';
+        // var s = 'bbb';
+        // var s = 'abcabcbb';
+        // var s = 'dvdfzxcvbn';
+        // var s = 'dqqqwertyuiezxcvbnmqwerty';
+        // var s ='qwertyuie'
+        // var s ='dvdf'
+        var lengthOfLongestSubstring = function (s) {
+            var length = 0;
+            var a = [];
+            var sw = 0
+            if (s.length == 0) {
+                alert("长度为0返回的")
+                return 0;
+            }
+            if (s.length == 1) {
+                alert("长度为1返回的")
+                return 1;
+            }
+            a.push(s[0]);
+            for (let i = 1; i < s.length; i++) {
+                for (let j = 0; j < a.length; j++) {
+                    console.log('i:'+i);
+                    if (a[j] === s[i]) {
+                        sw = 1
+                        if (a[j + 1]) {
+                            a = a.slice(j + 1)
+                            a.push(s[i])
+                            console.log('slic的'+a.length);
+                            console.log('slic的j'+j);
+                            console.log('slic的s='+s[i]);
+                            if (a.length > length) {
+                                length = a.length
+                                console.log('刷新了'+length);
+                            }
+                            break;
+                        }
+                        else {
+                            a = [s[i]]
+                        }
+                    }
+                }
+                if (sw == 0) {
+                    a.push(s[i])
+                    console.log('所有的'+a);
+                }
+                else {
+                    sw = 0
+                }
+                if (a.length > length) {
+                    length = a.length
+                    console.log('刷新了'+length);
+
+                }
+            }
+            return length;
+        }
+        // console.log(a);
+        console.log(lengthOfLongestSubstring(s)); 
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

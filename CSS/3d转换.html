@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box {
+			position: relative;
+			/* perspective: 900px; */
+			transition: all .3s;
+			margin: 100px auto;
+			height: 3000px;
+			width: 300px;
+			background-color: transparent;
+			transform-style: preserve-3d;
+		}
+		.box-ul li{
+			transition: all .3s;
+			transform-style: preserve-3d;
+			position: relative;
+			width: 100px;
+			height: 50px;
+			list-style: none;
+		}
+		.front {
+			position: absolute;
+			text-align: center;
+			line-height: 50px;
+			width: 100px;
+			height: 50px;
+			/* z-index: 1; */
+			transform: translateZ(25px);
+			background-color: pink;
+		}
+		.behind {
+			position: absolute;
+			text-align: center;
+			line-height: 50px;
+			width: 100px;
+			height: 50px;
+			/* transform: rotateY(180deg); */
+			transform: translateY(25px) rotateX(-90deg);
+			background-color: red;
+		}
+		.box-ul li:hover {
+			/* transform-origin: center top; */
+			transform: rotateX(90deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<ul class="box-ul">
+			<li>
+				<div class="front">前面</div>
+				<div class="behind">下面</div>
+			</li>
+			<li>
+				<div class="front">前面</div>
+				<div class="behind">下面</div>
+			</li>
+			<li>
+				<div class="front">前面</div>
+				<div class="behind">下面</div>
+			</li>
+			<li>
+				<div class="front">前面</div>
+				<div class="behind">下面</div>
+			</li>
+			<li>
+				<div class="front">前面</div>
+				<div class="behind">下面</div>
+			</li>
+			<li>
+				<div class="front">前面</div>
+				<div class="behind">下面</div>
+			</li>
+			
+		</ul>
+
+	</div>
+</body>
+
+</html>

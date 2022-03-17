@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Person(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+        }
+        var per1 = new Person("猪八戒", 16, "男");
+        var per2 = new Person("沙和尚", 17, "男");
+        var per3 = new Person("孙悟空", 18, "男");
+        var per4 = new Person("唐僧", 19, "男");
+        var per5 = new Person("白龙马", 20, "男");
+        var arr = [per1, per2, per3, per4, per5];
+        function judge(arr) {
+            var newarr = new Array();
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].age > 18) {
+                    newarr.unshift(arr[i]);
+                }
+            }
+            return newarr;
+        }
+        var result = judge(arr);
+        console.log(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

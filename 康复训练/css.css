@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+input[type="password"]::-ms-reveal{
+    display:none
+}
+.iconfont{
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 800;
+    color: rgb(180, 180, 180);
+}
+
+/* 
+head */
+.head{
+    min-width: 1100px;
+    height: 60px;
+    background-color: white;
+}
+.head .headmain{
+    background-color: #fff;
+    width: calc(100% - 100px);
+    display:flex;
+    max-width: 1710px;
+    min-width: 1050px;
+    justify-content: space-between;
+    margin:  0 auto;
+    height: 60px;
+}
+.head .navbox{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    width: 168px;
+    height: 60px;
+}
+.lv1guide{
+    /* margin-top: -20px; */
+    /* display: none; */
+    visibility: hidden;
+    z-index: 10;
+    /* border-top: 1px solid rgb(218, 216, 216); */
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    padding: 0px 50px;
+    background-color: #fff;
+    /* margin-top: -10px; */
+}
+.lv1guideul{
+    width: 100vh;
+    height: 40px;
+    font-size: 14px;
+    list-style: none;
+}
+.lv1{
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    float: left;
+}
+.lv1 a{
+    color: #333;
+    padding: 0px 6px;
+}
+/* .lv1 a:hover{
+    color: #fd4c5d;
+} */
+.lv2guide{
+    display: none;
+    /* display: block;  */
+    z-index: 10;
+    position: absolute;
+    top: 40px;
+    float: left;
+    line-height: 40px;
+    background-color: rgb(255, 255, 255);
+    width: 200vh;
+    height: 40px;
+    font-size: 14px;
+}
+.lv2guideul{
+    
+    display: none;
+    font-size: 14px;
+    list-style: none;
+    /* left: 50px; */
+    margin-left: 30px;
+}
+.lv2guideul li{
+    z-index: 10;
+    float: left;
+    /* position: absolute; */
+    margin-left: 20px;
+}
+.lv2guideul li a{
+    z-index: 10;
+    color: #333;
+    padding: 0px 6px;
+}
+.lv2guideul li a:hover{
+    color: #fd4c5b;
+}
+/* .lv2guideul1{ */
+    /* display: ; */
+/* } */
+
+.lv2guideul:nth-child(0){
+    /* display: block; */
+    position: absolute;
+    /* left: 50px; */
+}
+.head .searcharea{
+    position: relative;
+    height: 60px !important;
+    width: 300px;
+}
+.navbox img{
+    display: inline-block;
+    width: 94px;
+    height: 46px;
+}
+
+.daohangbox{
+    /* background-color: red; */
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.daohangbox2{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+.icon-gongneng{
+    vertical-align: middle;
+    transition: all 0.3s;
+    /* margin-top: 4px; */
+}
+.daohangbox a{
+    font-size: 14px;
+    color: #333;
+}
+.iconbox{
+    font-size: 16px;
+    position: absolute;
+    float: right;
+    width: 20px;
+    height: 20px;
+    top: 32%;
+    right: -40px;
+    color: rgb(207, 207, 207);
+}
+.head .searchbox{   
+    position: absolute;
+    top: 22%;
+    left: 51px;
+    height: 30px;
+    width: 300px;
+    text-indent: 1rem;
+    border:solid rgb(223, 220, 220) 1px;
+    border-radius: 40px;
+    outline:  none;
+}
+.headguide{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 280px;
+    list-style: none;
+    float: right;
+    justify-content: space-between;
+}
+
+.headguide li{
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    width: 20px;
+    align-items: center;
+    text-align: center;  
+}
+.headguide .guide-upload{
+    margin-top: 2px;
+    vertical-align: middle;
+    display: flex;
+    border: 1px solid rgb(253, 76, 93);
+    justify-content: space-between;
+    align-items: center;
+    width: 52px;
+    height: 26px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: rgb(253,76,93);
+}
+.word{
+    /* transform: translateY(-16px); */
+    transition: all 0.3s;
+    visibility: hidden;
+    z-index: 3;
+    transform-origin: top center;
+    height: 24px;
+    line-height: 24px;
+    width: 40px;
+    left: -11px;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    color: rgb(138, 138, 138);
+    text-align: center;
+    font-size: 12px;
+}
+.guideicon,icon-shouji{
+    transition: all 0.3s;
+    align-items: center;
+    vertical-align: middle;
+}
+.guide-upload .icon-shangchuan{
+    color: rgb(255, 255, 255) !important;
+}
+.icon-shangchuana{
+    line-height: 20px;
+}
+
+.iconfont:hover{
+    color: rgb(253,76,93);
+}
+/* .icon-gongneng:hover{
+} */
+.headguide a{
+    color: #fff;
+    position: relative;
+    font-size: 14px;
+    height: 20px;
+    width: 28px;
+}
+/* 
+////////////
+一下是中间部分
+////////////
+*/
+.mainbox{
+    position: relative;
+    width: auto;
+    height: 618px;
+    background:  url(../康复训练/acfunpng.png) no-repeat;
+    background-position: center;
+}
+.mainbox .contentbox{
+    opacity: .95;
+    position: absolute;
+    left: 640px;
+    top: 88px;
+    width: 430px;
+    height: 408px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 3px;
+}
+.login-container{
+    position: absolute;
+    left: 50%;
+    margin-left: -640px;
+    height: 618px;
+    width: 1280px;
+}
+.switch-img{
+    position: absolute;
+    background: url(./switch-img.png) no-repeat;
+    cursor: pointer;
+    z-index: 4;
+    width: 54px;
+    height: 54px;
+    top: 5px;
+    right: 5px;
+}
+.loginheader{
+    /* text-align: center; */
+    position: relative;
+    /* display: inline; */
+    padding-left: 95px;
+    color: #333;
+    line-height: 38px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.loginheader::before{
+    position: absolute;
+    left: 0px;
+    display: block;
+    background-size: 100% 100% !important;
+    background: url(.//acfunlogo.svg) no-repeat;
+    content: "";
+    width: 94.5px;
+    height: 32px;
+}
+
+.loginbox{
+    position: relative;
+    height: 240px;
+    width: 380px;
+    background-color: #fff;
+}
+.login-help:hover{
+    color: #fd4c5b !important;
+}
+.login-account-switch:hover{
+    color: #fd4c5b !important;
+}
+.register:hover{
+    color: #fd4c5b !important;
+}
+.mabox{
+    /* position: relative; */
+    height: 168px;
+    width: 168px;
+    float: left;
+}
+.qrcodebox{
+    visibility: hidden;
+    margin-top: 44px;
+    position: absolute;
+    height: 168px;
+    width: 168px;
+    border: rgb(218, 216, 216) 1px solid;
+    z-index: 0;
+    /* display: inline-block; */
+}
+.mengban{
+    position: absolute;
+    top:0px;
+    height: 168px;
+    width: 168px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    z-index: -1;
+}
+.statusinfo{
+    width: 168px;
+    height: 22px;
+    margin-top: 49px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+    z-index: 3;
+}
+
+.qrcodebox .statusbutton{
+    width: 105px;
+    height: 36px;
+    display: block;
+    width: 105px;
+    height: 36px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 36px;
+    background-color: #fd4c5b;
+    border-radius: 5px;
+    margin: 0 auto;
+    z-index: 3;
+    cursor: pointer;
+    
+}
+.loginbox .ma{
+    border: rgb(218, 216, 216) 1px solid;
+    margin-top: 44px;
+    width: 168px;
+    height: 168px;
+    z-index: 1;
+}
+.loginbox .pic{
+    float: right;
+    height: 246px;
+    width: 210px;
+}
+.loginform{
+    position: absolute;
+    visibility: hidden;
+    width: 380px;
+    height: 169px;
+    padding-top: 50px;
+}
+.loginbox .account,.loginbox .password{
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    width: 274px;
+    /* text-indent: 1rem; */
+    margin-top: 11px;
+    border: none;
+    
+}
+.loginbox .account::placeholder,.loginbox .password::placeholder{
+    color: #bebebe;
+    font-weight: 100;
+}
+.accountbox,.passwordbox{
+    width: 320px;
+    border: rgb(221, 221, 221) 1px solid;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.accountboxi{
+    width: 24px;
+    float: left;
+    margin: 8px 8px 0px 8px;
+    height: 24px;
+    background-image: url(./账号icon.png)  !important;
+    background: no-repeat center;
+}
+.passwordboxi{
+    width: 24px;
+    float: left;
+    margin: 8px 8px 0px 8px;
+    height: 24px;
+    background-image: url(./密码icon.png) !important;
+    background: no-repeat 50%;
+
+}
+.loginbox .loginbutton{
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #ececec;
+    background-color: #fd4c5b;
+    height: 40px;
+    cursor: pointer;
+    width: 320px;
+}
+.logintips,.click{
+    font-size: 12px;
+}
+.logintips{
+    margin: 6px auto ;
+    color: rgb(168, 168, 168);
+    text-align: center;
+    width: 380px;
+}
+.click{
+    display: block;
+    width: 90px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fd4c5b;
+    text-decoration: underline;
+    margin: 0 auto 15px;
+}
+.loginopts a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(145, 143, 143);
+}
+.login-help{
+    margin-right: 188px;
+}
+.login-account-switch{
+    margin-right: 14px;
+    color: #333 !important;
+}
+.register{
+    color: #333 !important;
+}
+/* 
+///////////
+以下是footer部分
+///////////
+*/
+.footer{
+    padding: 20px 0 20px 0;
+    width: auto;
+    height: 300px;
+    background-color: #ececec;
+}
+.footermain{
+    margin: 0 auto;
+    position: relative;
+    height: 306px;
+    width: 1163px;
+    /* margin: 0 67px 0 67px; */
+}
+.footertop a{
+    margin-right: 18px;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+}
+.footertop{
+    width: 1163px;
+    height: 86px;
+    margin-bottom: 50px;
+}
+.coop,.offical,.download,.friendly,.feedback{
+    color: rgb(168, 168, 168);
+    font-size: 11px;
+    padding: 0px 46px 0px 46px;
+    float: left;
+    line-height: 30px;
+    width: 140px;
+    border-right: rgb(231, 231, 231) solid 1px;
+}
+.download{
+    width: 140px !important;
+    padding-right: 36px !important;
+}
+.download a{
+    margin: 0px !important;
+}
+.new{
+    background: #fd4c5d;
+    color: #fff;
+    width: 28px;
+    height: 12px;
+    line-height: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 3px;
+}
+.coop{
+    padding-left: 0px !important;
+}
+.feedback{
+    border: none !important;
+}
+.emplosp{
+    width: 150px;
+}
+.offical{
+    width: 156px;
+}
+.feedback{
+    width: 210px;
+}
+.friendly{
+    width: 88px;
+}
+.footer-ac{
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+}
+.footer-ac img{
+    width: 70px;
+    vertical-align: middle;
+    height: 61px;
+}
+/* 
+/////////////
+以下是底部链接部分
+/////////////
+*/
+.footerlink a,.footerlink span{
+    font-size: 11px ;
+    color: #999 !important;
+    line-height: 21px !important;
+}
+.footerbottom{
+    line-height: 24px;
+    width: 1163px;
+    height: 96px;
+    margin-bottom: 20px;
+}
+.footerbottom img{
+    margin-right: 8px;
+}
+.area1,.area2,.area3,.area4,.area5,.area6{
+    line-height: 24px;
+}
+.area1{
+    float: left;
+    width: 422px;
+    height: 72px;
+}
+.area1 a{
+    width: 422px !important;
+    height: 20px;
+}
+.area1-link1icon{
+    vertical-align: middle;
+}
+.area1-link2icon{
+    vertical-align: middle;
+}
+.area1-link3icon{
+    vertical-align: middle;
+}
+.area2{
+    float: left;
+    width: 156px;
+    height: 72px;
+    padding-left: 18px;
+}
+.area3{
+    float: left;
+    width: 139px;
+    height: 48px;
+    padding-left: 59px;
+}
+.area4{
+    float: left;
+    width: 236px;
+    height: 48px;
+    padding-left: 45px;
+}
+.area5{
+    float: left;
+    width: 456px;
+    line-height: 24px;
+    height: 24px;
+    padding-left: 18px;
+}
+.area5 span{
+    display: inline-block;
+}
+.area6{
+    float: left;
+    width: 1163px;
+    height: 24px;
+}
+.area5 span{
+    line-height: 24px;
+    color: red;
+}
+.area6-span2{
+    margin-left: 16px;
+}
+.area6-span3{
+    margin-left: 103px;
+}
+.footerdeeply{
+    text-align: center;
+    width: 1163px;
+    height: 54px;
+}
+.footerdeeply img{
+    margin-bottom: 10px;
+}
+.footerdeeply p{
+    font-size: 12px;
+    color: rgb(180, 180, 180);
+}

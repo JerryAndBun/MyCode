@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: auto;
+    height: auto;
+    background-color: blanchedalmond;
+}
+.login-box{
+    left: 50%;
+    margin-left: -200px;
+    margin-top:150px;    
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 1);
+}
+
+.imgbox{
+    background-image: url(../pic/acfunlogo.svg);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 240px;
+    background-position: left center;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    /* background-position: 10px 20px; */
+    /* background-color: red; */
+    vertical-align:baseline;
+}
+.imgbox h1{
+    /* display:inline-block; */
+    /* position: absolute; */
+    font-size: 24px;
+    margin-left: 120px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+input{
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 200px;
+    outline: none;
+    margin-left: -100px;
+    left: 50%;
+    background-color: rgb(163, 248, 137);
+    border-radius: 4px;
+    border:none;
+    text-indent: 15px;
+}
+
+#count{
+    /* position: absolute; */
+    top: 50px;
+    margin-top: 100px;
+}
+
+#password{
+    top: 50%;
+}
+
+#f1{
+    margin-top: 100px;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/*
+var count = 0, sum = 0;
+for (var i = 1; i <= 100; i++) {
+if (i % 7 == 0) {
+count++;
+sum = i + sum;
+}
+}
+alert("7的倍数的个数是" + count + "总和是" + sum);*/
+        //////////////////////////////////////
+        //////////////////////////////////////
+        //////////////////////////////////////
+        //1w以内的水仙花数
+        /*
+        var ge = 0, shi = 0, bai = 0, qian = 0, wan = 0, temp = 0, cifang = 0;
+        for (var i = 100; i <= 10000; i++) {
+            var temp2 = i;
+            for (; temp2 >= 1; temp2 = parseInt(temp2 / 10)) {
+                cifang++;
+            }
+            temp2 = 0;
+            temp = i;
+            ge = parseInt(temp % 10);
+            temp = parseInt(temp / 10);
+            shi = parseInt(temp % 10);
+            temp = parseInt(temp / 10);
+            bai = parseInt(temp % 10);
+            temp = parseInt(temp / 10);
+            qian = parseInt(temp % 10);
+            temp = parseInt(temp / 10);
+            wan = parseInt(temp % 10);
+            // alert("个是" + ge + "十是" + shi + "百" + bai);
+            if ((Math.pow(ge, cifang) + Math.pow(shi, cifang) + Math.pow(bai, cifang) + Math.pow(qian, cifang) + Math.pow(wan, cifang)) == i) {
+                alert(i);
+            }
+            cifang = 0;
+        }
+        */
+        //////////////////////////////////////
+        //////////////////////////////////////
+        //////////////////////////////////////
+        //判断用户输入的数字是不是质数
+        /*
+        var a = parseInt(prompt("请输入一个数来判断是不是质数"));
+        while (true) {
+            if (a <= 0 || isNaN(a)) {
+                alert("不合法数据");
+                a = parseInt(prompt("请输入一个数来判断是不是质数"));
+            }
+            else {
+                break;
+            }
+
+        }
+
+        for (var i = 2; i < a; i++) {
+            if (a % i == 0 && i != a) {
+                alert("不是质数");
+                break;
+            }
+        }
+        if (a == i) {
+            alert("是质数");
+        }
+        */
+        //////////////////////////////////////
+        //////////////////////////////////////
+        //////////////////////////////////////
+        //输出2-100的质数
+        for (var i = 2; i <= 100; i++) {
+            for (var j = 2; j < i; j++) {
+                if (i % j == 0 && j != i) {
+                    break;
+                }
+            }
+            if (j == i) {
+                document.write(i + "是质数" + "<br\>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

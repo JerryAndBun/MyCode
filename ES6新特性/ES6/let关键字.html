@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let a = [1, 2, 3]
+        // let { 0: first, 2: last } = a;
+        // let b;
+        // [(b)] = [3];
+
+        // let { loc, loc: { start }, loc: { start: { line } } } = node;
+        // function fn() {
+        //     return "Hello World";
+        // }
+        // console.log(fn)
+        // let func = (name) => `Hello ${name}!`
+        // // "Hello Jack!"
+        // console.log(func('Jack'))
+        // console.log([1][0] === 1)
+        //         const tmpl = (addrs) => `
+        //   <table>
+        //   ${addrs.map(addr => `
+        //     ${addr.first}
+        //     <tr><td>${addr.last}</td></tr>
+        //   `).join('')}
+        //   </table>
+        // `;
+        //         // console.log(addrs)
+        //         const data = [
+        //             { first: '<Jane>', last: 'Bond' },
+        //             { first: 'Lars', last: '<Croft>' },
+        //         ];
+
+        //         console.log(tmpl(data));
+        // let a = 5;
+        // let b = 10;
+
+        // function tag(s) {
+        //     console.log(s[0]);
+        //     console.log(s[1]);
+        //     console.log(s[2]);
+        //     console.log(s[3]);
+        //     console.log(s[4]);
+        //     console.log(s[5]);
+        //     console.log(s[6]);
+        //     // console.log(v1);
+        //     // console.log(v2);
+
+        //     return "OK";
+        // }
+
+        // tag`Hello${a + b}world${1}${2}${2}${2}${2}oo`;
+        // let total = 30;
+        // let msg = passthru`The total is ${total} (${total * 1.05} with tax)`;
+
+        // function passthru(literals) {
+        //     let result = '';
+        //     let i = 0;
+        //     // console.log(literals[0]) // "The total is 30 (31.5 with tax)"
+        //     // console.log(literals[1]) // "The total is 30 (31.5 with tax)"
+        //     // console.log(literals[2]) // "The total is 30 (31.5 with tax)"
+        //     // console.log(literals[3]) // "The total is 30 (31.5 with tax)"
+        //     // console.log(literals[4]) // "The total is 30 (31.5 with tax)"
+        //     while (i < literals.length) {
+        //         result += literals[i++];
+        //         console.log(arguments)
+        //         if (i < arguments.length) {
+        //             result += arguments[i];
+        //         }
+        //     }
+
+        //     return result;
+        // }
+
+        // let message =
+        //     SaferHTML`<p>${121} has sent you a message.</p>`;
+
+        // function SaferHTML(templateData) {
+        //     let s = templateData[0];
+        //     console.log(arguments)
+        //     for (let i = 1; i < arguments.length; i++) {
+        //         let arg = String(arguments[i]);
+
+        //         // Escape special characters in the substitution.
+        //         s += arg.replace(/&/g, "&amp;")
+        //             .replace(/</g, "&lt;")
+        //             .replace(/>/g, "&gt;");
+
+        //         // Don't escape special characters in the template.
+        //         s += templateData[i];
+        //     }
+        //     return s;
+        // }
+        // console.log('abbbc'.replaceAll('b', '$`'))
+        // console.log(/\u{2}/u)
+        console.log(/}/.test('𠮷𠮷') )
+        // var regex = new RegExp(/xyz/ig,'i')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

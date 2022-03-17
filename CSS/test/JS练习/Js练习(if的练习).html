@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert("大家都知道，男大当婚女大当嫁，那么女方家长要嫁女儿，当然要提出一定的条件");
+        // var height = prompt("请输入你的身高")
+        // var treasure = prompt("请输入你的财产")
+        // var appearance = prompt("请输入你的颜值")
+        // if (height >= 180 && treasure >= 18000000 && appearance >= 500) {
+        //     alert("我一定要嫁给他");
+        // }
+        // else if (height >= 180 || treasure >= 18000000 || appearance >= 500) {
+        //     alert("嫁吧，比上不足，比下有余");
+        // }
+        // else {
+        //     alert("不嫁");
+        // }
+        // console.log("身高是"+height);
+        // console.log("财产是"+treasure);
+        // console.log("颜值是"+appearance);
+        //////////////////////////////////////
+        //////输入三个数，从小到大排序////////////
+        /////*方法一*//////////////////////////
+        {
+            alert("请输入三个数");
+            var max = prompt("数字1是");
+            var mid = prompt("数字2是");
+            var min = prompt("数字3是");
+            var a;
+            if (max > mid && max > min) {               //第一个数最大
+                if (min > mid) {
+                    a = min;
+                    min = mid;
+                    mid = a;
+                }
+            }
+            else if (mid > min && mid > max) {              //第二个数最大
+                if (min > max) {
+                    a = min;
+                    min = max;
+                    max = a;
+                }
+                a = max;
+                max = mid;
+                mid = a;
+            }
+            // else if(max>mid&&max<min)
+            // {
+            //     a=max;
+            //     max=min;
+            //     min=a;
+            //     a=min;
+            //     min=mid;
+            //     mid=a;
+            // }
+            // else {
+            //     a = max;
+            //     max = min;
+            //     min = a;
+            // }
+            else {              //第三个数最大
+                a = max;
+                max = min;
+                min = a;
+                if (min > mid) {
+                    a = mid;
+                    mid = min;
+                    min = a;
+                }
+            }
+
+            alert("他们从小到大的顺序是：" + min + " " + mid + " " + max);
+        }
+        //////////////////////////////////////
+        /////输入三个数，从小到大排序/////////////
+        /////*方法二*//////////////////////////
+        /*
+        var a = prompt("数字1是");
+        var b = prompt("数字2是");
+        var c = prompt("数字3是");
+        var max = 99;
+        var mid = 98;
+        var min = 97;
+        if (a > b) { max = a; mid = b; }
+        else { max = b; mid = a; }
+        if (max < c) {
+            max = c;
+            if (a > b) { mid = a; min = b; }
+            else { min = a; mid = b; }
+        }
+        else {
+            if (mid > c) { min = c; }
+            else {
+                var x = mid;
+                mid = c;
+                min = x;
+            }
+        }
+        alert("他们从小到大的顺序是：" + min + " " + mid + " " + max);
+        */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

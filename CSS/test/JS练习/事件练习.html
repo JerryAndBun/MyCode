@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #roomdiv{
+            border: black 1px solid;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        #showdiv{
+            border: black 1px solid;
+            width: 200px;
+            height: 100px;
+        } */
+        #box1{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var room = document.getElementById("roomdiv");
+            var show = document.getElementById("showdiv");
+            document.onmousemove=function(event){
+                event=event||window.event;
+                var x=event.clientX;
+                var y=event.clientY;
+              //  show.innerHTML="x="+x+" "+"y="+y;
+                var box1 = document.getElementById("box1");
+                var sl =document.scrollLeft||document.documentElement.scrollLeft;
+                var st =document.scrollLeft||document.documentElement.scrollTop;
+                box1.style.left=x+sl+"px";
+                box1.style.top=y+st+"px";
+            }
+            
+        }
+    </script>
+</head>
+<body style="height:1000px ;width: 2000px;" >
+    <!-- <div id="roomdiv">
+    </div>
+    <div id="showdiv">
+    </div> -->
+    <div id="box1">
+    </div>
+</body>
+</html>
